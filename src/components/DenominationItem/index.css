@@ -1,0 +1,21 @@
+/* Write your CSS here */
+
+.container {
+  list-style: none;
+  border-color: #d4d2db;
+  border-radius: 8px;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #585076;
+  width: 42%;
+  padding: 3px;
+  text-align: center;
+  margin: 8px;
+}
+
+.amount {
+  color: #d4d2db;
+  font-family: roboto;
+  margin: 5px;
+  font-weight: normal;
+}
