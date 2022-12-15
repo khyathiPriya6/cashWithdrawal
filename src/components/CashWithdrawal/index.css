@@ -1,116 +1,155 @@
-/* Write your CSS here */
-.bg-container {
-  background-color: white;
-  padding-right: 10px;
-  height: 100%;
+.app-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.main-container {
+.cash-withdrawal-container {
   background-color: #150b3e;
-  border-radius: 10px;
-  border-width: 0px;
-  padding: 10px;
-  margin: 20px;
-  width: 50%;
-  height: 50%;
-  align-self: center;
-}
-.profile-section {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  margin: 10px;
+  width: 80%;
+  border-radius: 16px;
+  padding-top: 24px;
+  padding-left: 18px;
+  padding-bottom: 8px;
+  padding-right: 18px;
+  max-width: 350px;
 }
 
-.profile-pic {
-  background-color: #c7d2fe;
-  border-radius: 100px;
-  border-width: 0px;
-  width: 80px;
-  height: 80px;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .cash-withdrawal-container {
+    width: 50%;
+    padding-top: 48px;
+    padding-left: 36px;
+    padding-bottom: 16px;
+    padding-right: 36px;
+    max-width: 422px;
+  }
+}
+
+.user-details-container {
   display: flex;
-  flex-direction: column;
+}
+
+.initial-container {
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #c7d2fe;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
 }
 
-.profile-pic-name {
+@media screen and (min-width: 768px) {
+  .initial-container {
+    height: 64px;
+    width: 64px;
+    border-radius: 32px;
+  }
+}
+
+.initial {
   color: #7c3aed;
-  font-family: roboto;
-  margin: 10px;
-  font-weight: bold;
-  font-size: 20px;
+  font-family: 'Roboto';
+  font-size: 14px;
 }
 
-.profile-name {
+.name {
   color: #d4d2db;
-  font-family: roboto;
-  margin: 10px;
-  font-size: 30px;
-  margin-left: 18px;
-  margin-top: 30px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .name {
+    font-size: 20px;
+    margin-left: 16px;
+  }
 }
 
 .balance-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin: 10px;
-  padding: 10px;
+  margin-top: 24px;
 }
 
-.balance-heading {
+.your-balance {
   color: #585076;
-  font-family: roboto;
-  font-weight: bold;
-  font-size: 25px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 4px;
 }
 
-.amount-container {
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 768px) {
+  .your-balance {
+    font-size: 20px;
+    margin-top: 8px;
+  }
 }
 
-.amount {
+.balance {
   color: #d4d2db;
-  font-family: roboto;
-  margin: 2px;
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 5px;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
 }
 
-.rupee-para {
+@media screen and (min-width: 768px) {
+  .balance {
+    font-size: 32px;
+  }
+}
+
+.currency {
   color: #585076;
-  font-family: roboto;
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.withdraw-section {
-  margin: 10px;
-  padding: 10px;
+@media screen and (min-width: 768px) {
+  .currency {
+    font-size: 12px;
+  }
 }
 
-.withdraw-para {
+.withdraw {
   color: #d4d2db;
-  font-family: roboto;
-  font-size: 25px;
-  font-weight: bold;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 16px;
 }
 
-.choose-amount {
+@media screen and (min-width: 768px) {
+  .withdraw {
+    font-size: 24px;
+    margin-top: 24px;
+  }
+}
+
+.choose-sum {
   color: #585076;
-  font-weight: bold;
-  font-size: 19px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
-.amount-btn-container {
-  list-style: none;
+@media screen and (min-width: 768px) {
+  .choose-sum {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+.denominations-list {
+  padding-left: 0px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
+
